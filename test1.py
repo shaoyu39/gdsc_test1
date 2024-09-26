@@ -25,8 +25,7 @@ for i in range(len(stock)):
     price = soup.find('span', class_=[
         "Fz(32px) Fw(b) Lh(1) Mend(16px) D(f) Ai(c) C($c-trend-down)", 
         "Fz(32px) Fw(b) Lh(1) Mend(16px) D(f) Ai(c)", 
-        "Fz(32px) Fw(b) Lh(1) Mend(16px) D(f) Ai(c) C($c-trend-up)"
-    ]).getText()
+        "Fz(32px) Fw(b) Lh(1) Mend(16px) D(f) Ai(c) C($c-trend-up)"]).getText()
 
     # 回報的訊息 (可自訂)
     message = f"股票 {stockid} 即時股價為 {price}"
